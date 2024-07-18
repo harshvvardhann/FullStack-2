@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict"
+        //cannot declare same variable again using let keyword
+        //let a=34;
+        //let a=64;
+
+        //can declare same variable again using var keyword
+        //var b=22;
+        //var b=21;
+
+        //cannot change the value of a constant variable once initialised
+        //const a=4545;
+        //a=120;
+
+        //DataTypes:(1)Numbers (2)Objects (3)Booleans (4)String (5)undefined (6)null
+        
+        //console.log(a);
+
+        /*document.addEventListener("click",function click(){
+            console.log("clicked")
+            //alert("hello")
+            let conf=confirm("Do you want to continue...?")
+            console.log(conf)
+        });*/
+
+        //let arr=[1,2,3];
+        //here outside function we can have access to it..
+        //console.log(this);
+        /*function myfun(number){   
+            //in strict mode we can't access current object in a function using this keyword.
+            console.log('THe number is>>'+this)
+        }
+        myfun() */
+
+        //in arrow function we can get the object using this keyword but not in normal function.
+        /*let myfunc=(number)=>{
+            console.log("This number is ..."+this)
+        }
+        myfunc()*/
+
+        //callback function inside set timeout, callback function means ek kam ho gya h already aur dusre kam k liye wait kr rha h. so javascript ek esi language h jo asycnchronous h means multiple kam ek sath krti h aur kisi ek kam k vjh se ruk nai jayegiii.so jab code upar se suru hota h to vo zyada se zyada koshish krta h k block na kiya jaye main thread ko. so agar jese JS interpreter ko ye chiz dekhne mile agr k setTimeout diya h to vo vahi ruk nai jayega aur khega thik h 3 sec bad execute ho jana tum..abhi me aage ki script execute krta hu. practical example: railway station pr agar ek insan ki jeb nahi khul rhi h kisi vjh se pese dene k liye to ticket counter wale rok kk nahi rakhenge bbaki sb ko uske liye. aur ye sb hota h javascript me callbacks ki help se.aur vo tb execute hote h jb specified time khtm ho jayee.so setTimeout call back ko fire krega 3 sec k bad. 
+        /*setTimeout(()=>{
+            console.log("Helloo")
+        },3000);
+        console.log("byee");*/
+
+        //Promises:k yaar me ek chiz krne wala hu aur jese hi vo chiz puri ho jayegii me ek function ko run kr dunga to promise ya to resolve hoti h ya to reject hoti h.
+    </script>
+</head>
+<body>
+    <!-- Maan lo jb mouse iss pr jaye to ek event fire hoo so uss event ko me listen kr skuu k vaha kuch hua h using document.addEventListner() -->
+    <h1>I am learning Js</h1>
+    i am learning JS.
+</body>
+</html>
